@@ -13,7 +13,7 @@ export class LoginComponent extends React.Component {
     e.preventDefault();
     var username = e.target.elements.username.value;
     var password = e.target.elements.password.value;
-    if (username === "admin" && password === "123") {
+    if (username === "admin" && password === "admin@123") {
       this.props.history.push("./welcome");
     } else {
       this.setState({
